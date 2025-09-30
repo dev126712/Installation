@@ -1,7 +1,7 @@
 ### Installation of Docker, Kubernetes and AWS cli
 
 ## User Data
-
+``` bash
 #!/bin/bash
 
 sudo apt update
@@ -11,3 +11,4 @@ git clone https://github.com/dev126712/Installation.git
 cd Installation
 chmod +x 'Docker&Terrafort.sh'
 ./'Docker&Terrafort.sh'
+```
