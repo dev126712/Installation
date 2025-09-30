@@ -2,7 +2,7 @@
 
 #### If not use for User Data make sur to have git install to clone the repo then execute the script.
 
-#### User Data
+#### -- User Data
 #### It update the package, install git to clone the repo then execute the srcipt.
 ``` bash
 #!/bin/bash
