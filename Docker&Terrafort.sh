@@ -80,6 +80,7 @@ main() {
   echo "--- Starting system update and upgrade ---"
   sudo apt-get update
   sudo apt-get upgrade -y
+  sudo apt install unzip
   echo "--- System update and upgrade completed ---"
   
   install_docker
