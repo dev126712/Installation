@@ -1,4 +1,4 @@
-### Installation of Docker, Kubernetes and AWS cli
+### Installation of Docker, Terraform, Kubernetes(kubectl & Minikube) and AWS cli for Debian, Ubuntu.
 
 ## User Data
 ``` bash
