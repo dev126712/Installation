@@ -6,7 +6,7 @@ set -e
 # Function to install Docker and related tools
 install_docker() {
   echo "--- Installing Docker ---"
-  sudo apt-get install ca-certificates curl gnupg software-properties-common -y
+  sudo apt install ca-certificates curl gnupg -y
   
   # Add Docker's official GPG key
   sudo install -m 0755 -d /etc/apt/keyrings
