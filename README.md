@@ -12,6 +12,6 @@ sudo apt upgrade -y
 sudo apt install git -y
 git clone https://github.com/dev126712/Installation.git
 cd Installation
-chmod +x 'Docker&Terrafort.sh'
-./'Docker&Terrafort.sh'
+chmod +x 'DockerTerrKub.sh'
+./'DockerTerrKub.sh'
 ```
