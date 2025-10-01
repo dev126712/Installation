@@ -59,9 +59,15 @@ install_kubernetes() {
   
   # Install Kubectl via the official Kubernetes repository
   sudo apt-get update
-  sudo apt-get install -y apt-transport-https ca-certificates curl
+ 
+  # Find the latest stable version
+  curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
 
-  sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg
+  # Make the binary executable
+  chmod +x ./kubectl
+
+   # Move the binary into your PATH (e.g., /usr/local/bin)
+  sudo mv ./kubectl /usr/local/bin/kubectl
   
   echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
   
