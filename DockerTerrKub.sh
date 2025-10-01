@@ -64,7 +64,7 @@ install_kubernetes() {
   sudo curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
 
   # Make the binary executable
-  chmod +x ./kubectl
+  sudo chmod +x ./kubectl
 
    # Move the binary into your PATH (e.g., /usr/local/bin)
   sudo mv ./kubectl /usr/local/bin/kubectl
