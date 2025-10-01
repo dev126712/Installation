@@ -70,11 +70,11 @@ install_kubernetes() {
   sudo mv ./kubectl /usr/local/bin/kubectl
   
   echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
+  sudo rm /etc/apt/sources.list.d/kubernetes.list
   
   sudo apt-get update
   sudo apt-get install -y kubectl
 
-  sudo rm /etc/apt/sources.list.d/kubernetes.list
   
   # Install Minikube
   sudo curl -Lo minikube https://github.com/kubernetes/minikube/releases/latest/download/minikube-linux-amd64
