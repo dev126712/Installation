@@ -4,6 +4,7 @@
 
 ### -- User Data
 #### It update the package, install git to clone the repo then execute the srcipt.
+##### Even after the instance is up and running it can take a couple of minutes for the script to install everything. Be patient :) .
 ``` bash
 #!/bin/bash
 
