@@ -46,10 +46,10 @@ install_terraform() {
 # Function to install AWS CLI
 install_awscli() {
   echo "--- Installing AWS CLI ---"
-  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-  unzip awscliv2.zip
+  sudo curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+  sudo unzip awscliv2.zip
   sudo ./aws/install --update
-  rm -rf awscliv2.zip ./aws
+  sudo rm -rf awscliv2.zip ./aws
   echo "--- AWS CLI installed successfully! ---"
 }
 
@@ -69,7 +69,7 @@ install_kubernetes() {
   sudo apt-get install -y kubectl
   
   # Install Minikube
-  curl -Lo minikube https://github.com/kubernetes/minikube/releases/latest/download/minikube-linux-amd64
+  sudo curl -Lo minikube https://github.com/kubernetes/minikube/releases/latest/download/minikube-linux-amd64
   sudo install minikube /usr/local/bin/
   
   echo "--- Kubernetes and Minikube installed successfully! ---"
