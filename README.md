@@ -1,4 +1,4 @@
-### Installation of Docker, Terraform, Kubernetes(kubectl & Minikube) and AWS cli on Debian & Ubuntu.
+### Installation of Docker, Terraform, Kubernetes(kubectl & Minikube) and AWS cli on Debian.
 
 #### If not use for User Data make sur to have git install to clone the repo then execute the script.
 
