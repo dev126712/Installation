@@ -23,6 +23,10 @@ install_docker() {
   
   sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
   echo "--- Docker installed successfully! ---"
+
+  # Give permission to use docker as a non root user
+
+  #sudo chmod 666 /var/run/docker.sock
 }
 
 # Function to install Terraform
